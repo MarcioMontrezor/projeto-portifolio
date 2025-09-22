@@ -111,12 +111,10 @@ div#social a:hover {
     color: var(--destaque-inverso);
 }   
 
-div#detalhes {
+section#detalhes {
     grid-column: 2;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
 }
 
 article {
@@ -126,6 +124,13 @@ article {
     border-radius: 8px;
 }
 
+article h2 {
+    color: var(--destaque);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: left;
+}
+
 article#video .video-container {
     position: relative;
     width: 100%;
@@ -133,7 +138,7 @@ article#video .video-container {
     aspect-ratio: 16/9;
 }
 
-.video-container {
+.video-container video{
     position: absolute;
     top: 0;
     left: 0;
