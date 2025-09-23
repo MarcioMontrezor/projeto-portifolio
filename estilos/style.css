@@ -161,7 +161,12 @@ article#video .video-container {
 }
 
 #skill-container .nome {
-    font-weight: 600;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#skill-container .porcent {
+    font-weight: bold;
     color: var(--destaque);
 }
 
@@ -176,4 +181,10 @@ article#video .video-container {
     height: 100%;
     background-color: var(--destaque-inverso);
     border-radius: 4px;
-}   
+} 
+
+@media screen and (min-width: 768px) {
+    #skill-container {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
